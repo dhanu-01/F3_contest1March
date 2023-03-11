@@ -4,7 +4,7 @@ function OpeningCeremony(Race100M){
         score = {red:0,blue:0,green:0,yellow:0}
         console.log("starting scores",score)
         Race100M(score,LongJump)
-    },1000) 
+    },2000) 
 }
 
 
@@ -97,4 +97,6 @@ function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
-OpeningCeremony(Race100M)
+let btn = document.getElementById("btn")
+
+btn.addEventListener("click",OpeningCeremony(Race100M))
